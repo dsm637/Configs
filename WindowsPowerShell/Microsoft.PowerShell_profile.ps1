@@ -21,6 +21,7 @@ function prompt
   $global:oldColor = $color
 
   $host.ui.rawui.windowtitle = "$($global:admin) $(Get-Location)" 
-  write-host "[$(Get-Date)]>" -nonewline -foregroundcolor $color
+  $d = (Get-Date).ToString("MM/dd hh:mm:ss")
+  write-host "$d$admin" -nonewline -foregroundcolor $color
   " "
 }
