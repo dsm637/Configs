@@ -1,0 +1,65 @@
+{
+/*
+	 // Place your snippets for Go here. Each snippet is defined under a snippet name and has a prefix, body and 
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
+	 // Example:
+	 "Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+	"fmt.Println": {
+		"prefix": "fmn",
+		"body": [
+			"fmt.Println(\"$1\")"
+		],
+		"description": "Print line"
+	},
+	"fmt.Printf": {
+		"prefix": "fmf",
+		"body": [
+			"fmt.Printf(\"$1\")"
+		],
+		"description": "Print format"
+	},
+	"pmain": {
+		"prefix": "pmain",
+		"body": [
+			"package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc main() {\n\t$1\n}"
+		],
+		"description": "Main module"
+	},
+	"fun": {
+		"prefix": "fun",
+		"body": [
+			"func $1() {\n\t\n}"
+		],
+		"description": "Function"
+	},
+	"ret": {
+		"prefix": "ret",
+		"body": [
+			"return $1"
+		],
+		"description": "Return"
+	},
+	"tstr": {
+		"prefix": "tstr",
+		"body": [
+			"type $1 struct {\n\t$2\n}"
+		],
+		"description": "type struct"
+	},
+	"tint": {
+		"prefix": "tint",
+		"body": [
+			"type $1 interface {\n\t$2\n}"
+		],
+		"description": "type interface"
+	}
+}
